@@ -108,11 +108,23 @@ nav {
   align-items: center;
   padding-left: 2%;
   padding-right: 2%;
-  box-shadow: 0 10px 5px -5px #c8102e;
-  margin-bottom: 2%; }
+  box-shadow: 0 10px 5px -5px #c8102e; }
   nav #about:hover {
     color: #c8102e;
     cursor: pointer; }
+
+main figure.mainbanner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto); }
+main figure.mainbanner img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/3; }
+main figure.mainbanner figcaption {
+  grid-column: 1/2;
+  grid-row: 2/3; }
 
 footer {
   height: 70px;
@@ -125,10 +137,6 @@ footer {
     color: #c8102e;
     cursor: pointer; }
 
-@media only screen and (min-width: 560px) {
-  header, main {
-    max-width: 60rem;
-    margin: 0 auto; } }
 /* end media query */
 
 /*# sourceMappingURL=styles.css.map */

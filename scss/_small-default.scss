@@ -7,12 +7,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-family: 'Noto Serif', serif;
     font-family: 'Roboto', sans-serif;
-
 }
 
 nav {
 
     height: 70px;
+    // background-color: $primaryColor;
+    background-color: white;
     // border: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -23,23 +24,76 @@ nav {
     box-shadow: 0 10px 5px -5px $secondaryColor; 
     // margin-bottom: $gutter;
     #about:hover {
-        color: $secondaryColor;
+        color: $secondaryColor2;
         cursor: pointer;
+    }
+
+    #about {
+        color: $secondaryColor;
     }
 }
 
 main {
     figure.mainbanner {
         width: 100%;
-      
-     
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
         // margin-left: $gutter;
         // border: red 2px dashed;
+        // box-shadow: 0 10px 3px -3px $secondaryColor;
     }  
     figure.mainbanner img {
         width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
 
+    figure.mainbanner figcaption {
+        color: white;
+        font-size: 72px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: center;
+        
+        // color: $secondaryColor;
+        opacity: 0.65;
+    }
+
+    #logos {
+        display: flex;
+        justify-content: space-between;
+        padding: $gutter;
+        box-shadow: 0 10px 5px -5px $secondaryColor;
+    }
+
+    #air:hover {
+        content: url(/Assets/1F6EB_color.png);
+    }
+    #car:hover {
+        content: url(/Assets/1F69B_color.png);
+    }
+    #warehouse:hover {
+        content: url(/Assets/1F3EC_color.png);
+    }
+    #routes:hover {
+        content: url(/Assets/E244_color.png);
+    }
+
+    .airvechiles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cards {
+        margin: auto;
+        max-width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
     // #mainbanner {
     //     background-image: url("/Assets/sfaircargo1595x509.png");
     //     width: 100%;

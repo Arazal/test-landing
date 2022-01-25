@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html --no-source-maps --open",
-    "pro": "parcel build index.html --no-source-maps --no-cache"
+    "pro": "parcel build index.html --no-source-maps --no-cache *.css --no-minify"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Arazal/test-landing#readme",
   "devDependencies": {
-    "parcel-plugin-clean-easy": "^1.0.2"
+    "cssnano": "^5.0.16",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "postcss": "^8.4.5"
   },
   "parcelCleanPaths": [
     "dist",
