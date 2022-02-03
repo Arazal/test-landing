@@ -1,3 +1,23 @@
 @media only screen and (min-width: 1140px) {
-    
+    main {
+        figure.mainbanner figcaption {
+            color: $secondaryColor;
+            font-size: 72px;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            justify-self: center;
+            align-self: center;
+            
+            // color: $secondaryColor;
+            opacity: 0.85;
+        }
+
+        #cards {
+            margin: auto;
+            max-width: 60%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+    }
 }
