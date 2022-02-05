@@ -1,37 +1,46 @@
 @media only screen and (min-width: 560px) {
     //  header, main {max-width: 80rem; margin: 0 auto;}
 
-     
+    nav {
+        // #about {
+        //     // color: black;
+        //     display: flex;
+        // }
+    }
+   
         
         // #mainbanner {src: url("/Assets/banner1600x481.png");}
 
         main {
+           
+
             figure.mainbanner figcaption {
-                color: $secondaryColor2;
-                font-size: 52px;
+                // color: white;
+                font-size: 42px;
                 grid-column: 1/2;
                 grid-row: 1/3;
-                justify-self: center;
-                align-self: center;
+                // justify-self: center;
+                // align-self: center;
                 
-                // color: $secondaryColor;
-                opacity: 0.85;
+                // // color: $secondaryColor;
+                // opacity: 0.65;
+             
             }
 
-            #logos {
-                display: flex;
-                justify-content: space-between;
-                padding: $gutter;
-                box-shadow: 0 10px 5px -5px $secondaryColor;
-            }
+            // #logos {
+            //     display: flex;
+            //     justify-content: space-between;
+            //     padding: $gutter;
+            //     box-shadow: 0 10px 5px -5px $secondaryColor;
+            // }
 
-            #cards {
-                margin: auto;
-                max-width: 60%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+            // #cards {
+            //     margin: auto;
+            //     max-width: 60%;
+            //     display: grid;
+            //     grid-template-columns: 1fr 1fr;
                 
-            }
+            // }
         }
        
 } 

@@ -1,4 +1,4 @@
-const footer = document.getElementById("footer")
+const footer = document.getElementById("copy")
 
 const currentYear = new Date().getFullYear()
 
