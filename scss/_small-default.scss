@@ -14,7 +14,8 @@ body {
 nav {
 
     height: 70px;
-    background-color: $primaryColor;
+    // background-color: $primaryColor;
+    background-image: radial-gradient(circle, $primaryColor 0%, $secondaryColor 100%);
     opacity: 0.98;
     // background-color: white;
     // border: 1px solid black;

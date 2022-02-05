@@ -102,7 +102,7 @@ body {
 
 nav {
   height: 70px;
-  background-color: #2d2926;
+  background-image: radial-gradient(circle, #2d2926 0%, #c8102e 100%);
   opacity: 0.98;
   display: -webkit-box;
   display: -ms-flexbox;
