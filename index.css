@@ -173,7 +173,6 @@ main #callbtn {
     padding: 0 35px 0 35px;
     font-size: 15px;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
     font-weight: bolder;
     border: none;
     cursor: pointer;
@@ -217,18 +216,41 @@ main #linehauls {
   background-color: #c8102e; }
 
 #footerwrapper {
+  background-color: #2d2926;
+  opacity: 0.97;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  #footerwrapper #socialicons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #footerwrapper #wechatqr {
+    height: 90px;
+    width: 90px; }
+    #footerwrapper #wechatqr :hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+      -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+      cursor: pointer; }
 
 #copy {
   color: white;
-  opacity: 0.85; }
+  opacity: 0.85;
+  margin: 2%; }
 
 #copy:hover {
   color: #c8102e;
