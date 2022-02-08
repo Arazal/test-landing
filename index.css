@@ -183,7 +183,7 @@ main #callbtn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 2%; }
+    margin: 1%; }
   main #callbtn #btn1 {
     background-color: #c8102e;
     color: #2d2926; }

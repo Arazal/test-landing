@@ -93,7 +93,6 @@ html {
 
 /*  apply a natural box layout model to all elements  */
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -103,13 +102,19 @@ body {
 
 nav {
   height: 70px;
-  background-color: white;
+  background-color: #2d2926;
+  opacity: 0.98;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 2%;
-  padding-right: 2%;
-  box-shadow: 0 10px 5px -5px #c8102e; }
+  padding-right: 2%; }
   nav #about:hover {
     color: #eca154;
     cursor: pointer; }
@@ -119,54 +124,123 @@ nav {
 main figure.mainbanner {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto); }
+  font-size: 32px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  overflow: hidden; }
+  main figure.mainbanner :hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95); }
 main figure.mainbanner img {
   width: 100%;
+  max-height: 481px;
   grid-column: 1/2;
   grid-row: 1/3; }
 main figure.mainbanner figcaption {
-  color: white;
-  font-size: 72px;
+  color: #2d2926;
+  font-size: 22px;
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 3/3;
   justify-self: center;
-  align-self: center;
-  opacity: 0.65; }
-main #logos {
+  -ms-flex-item-align: center;
+      align-self: center;
+  opacity: 0.85; }
+  main figure.mainbanner figcaption .slogan {
+    color: #c8102e;
+    font-family: 'Fugaz One', cursive; }
+main #callbtn {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  box-shadow: 0 10px 5px -5px #c8102e; }
-main #air:hover {
-  content: url(/Assets/1F6EB_color.png); }
-main #car:hover {
-  content: url(/Assets/1F69B_color.png); }
-main #warehouse:hover {
-  content: url(/Assets/1F3EC_color.png); }
-main #routes:hover {
-  content: url(/Assets/E244_color.png); }
-main .airvechiles {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px; }
+  main #callbtn button {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1%; }
+  main #callbtn #btn1 {
+    background-color: #c8102e;
+    color: #2d2926; }
+    main #callbtn #btn1:hover {
+      background-color: white;
+      color: #c8102e;
+      border: 1px solid black; }
+  main #callbtn #btn2 {
+    background-color: #2d2926;
+    color: #c8102e; }
+    main #callbtn #btn2:hover {
+      background-color: white;
+      color: #2d2926;
+      border: 1px solid black; }
 main #cards {
   margin: auto;
   max-width: 60%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
-
-footer {
-  height: 70px;
-  background-color: #2d2926;
-  color: white;
+  grid-template-columns: 1fr; }
+main #linehauls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  footer #footer:hover {
-    color: #c8102e;
-    cursor: pointer; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px; }
 
+#redline {
+  height: 5px;
+  background-color: #c8102e; }
+
+#footerwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#copy {
+  color: white;
+  opacity: 0.85; }
+
+#copy:hover {
+  color: #c8102e;
+  cursor: pointer; }
+
+@media only screen and (min-width: 560px) {
+  main figure.mainbanner figcaption {
+    color: white;
+    font-size: 42px;
+    grid-column: 1/2;
+    grid-row: 1/3; } }
 /* end media query */
-
-/*# sourceMappingURL=styles.css.map */
+@media only screen and (min-width: 1140px) {
+  main figure.mainbanner figcaption {
+    font-size: 72px; } }
