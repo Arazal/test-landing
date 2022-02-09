@@ -210,6 +210,41 @@ main #linehauls {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 25px; }
+main .lps {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  margin-top: 2%; }
+
+.loading {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  display: inline-block; }
+  .loading .made-with-love {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: arial;
+    color: #fff; }
+    .loading .made-with-love i {
+      font-style: normal;
+      color: #F50057;
+      font-size: 14px;
+      position: relative;
+      top: 2px; }
+    .loading .made-with-love a {
+      color: #fff;
+      text-decoration: none; }
+      .loading .made-with-love a:hover {
+        text-decoration: underline; }
+
+#gallery {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  margin-bottom: 2%; }
 
 #redline {
   height: 5px;
