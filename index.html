@@ -26,7 +26,7 @@
   <nav>
     <div>
       <figure class="icon">
-        <img src="assets/logoWhite125x45.png" alt="icon">
+        <img id="logo" src="assets/SF International.svg" alt="icon">
       </figure>
     </div>
     <!-- <div id="about">ABOUT</div> -->
@@ -72,7 +72,7 @@
         <a class="f4 fw6 db black link dim" href="tel:+78005056318">Call us</a>
       </button>
       <button id="btn2">
-        <a class="f4 fw6 db dark-red link dim" href="mailto: ruscs@sfmail.sf-express.com">Email us</a>
+        <a class="f4 fw6 db link dim" id="btnemail" href="mailto: ruscs@sfmail.sf-express.com">Email us</a>
       </button>
       <!-- <a class="f11 link dim ph3 pv2 mb2 dib white bg-hot-pink" href="#0">Button Text</a>
       <a class="f6 link dim ph3 pv2 mb2 dib white bg-hot-pink" href="#0">Button Text</a> -->
@@ -168,29 +168,22 @@
     <!-- Gallery -->
 
     <div id="linehauls" >
-      <h1 class="f5 f3-ns fw9 black-80">OUR PROJECTS</h1>
+      <h1 class="f5 f3-ns fw9 black-80 ma3">OUR PROJECTS</h1>
     </div>
-    <figure class="lps">
-      <img src="/loading.svg" data-src="Assets/LPSwide1920x699.jpg" alt="mainbanner">
-      <!-- <figcaption>
-          <h1>LPS</h1>
-        </figcaption> -->
-    </figure>
 
-    <figure class="lps">
-      <img src="loading.svg" data-src="Assets/LPSinside1920x1280.jpg" alt="mainbanner">
-      <!-- <figcaption>
-          <h1>LPS</h1>
-        </figcaption> -->
-    </figure>
-    <figure class="lps">
-      <img src="loading.svg" data-src="Assets/SPS1920x1080.jpg" alt="mainbanner">
-      <!-- <figcaption>
-          <h1>LPS</h1>
-        </figcaption> -->
-    </figure>
 
-    <!-- Loader 6 -->
+
+    <div id="newgallery">
+      <img id="img1" width="600" height="400" src="Assets/LPS1-600x400.jpg" alt="" class="skewElem">
+      <img id="img2" width="600" height="400" src="Assets/LPS3-600x400.jpg" alt="" class="skewElem">
+      <img id="img1" width="600" height="400" src="Assets/LPS1-600x400.jpg" alt="" class="skewElem">
+      <img id="img2" width="600" height="400" src="Assets/SPS1-600x900.jpg" alt="" class="skewElem">
+      <img id="img1" width="600" height="400" src="Assets/SPS2-600x800.jpg" alt="" class="skewElem">
+      
+    </div>
+
+
+ 
 
     
 
@@ -198,7 +191,7 @@
 
   </main>
 
-  <div id="redline"></div>
+  <div id="redline" class="mt3"></div>
 
 
 
@@ -242,6 +235,8 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="index.js"></script>
 </body>
 

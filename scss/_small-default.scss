@@ -13,10 +13,10 @@ body {
 
 nav {
 
-    height: 70px;
+    height: 80px;
     background-color: $primaryColor;
     // background-image: radial-gradient(circle, $primaryColor 0%, $secondaryColor 100%);
-    opacity: 0.98;
+    // opacity: 0.98;
     // background-color: white;
     // border: 1px solid black;
     display: flex;
@@ -24,6 +24,11 @@ nav {
     align-items: center;
     padding-left: $gutter;
     padding-right: $gutter;
+
+    #logo {
+        height: 100px;
+        width: 200px;
+    }
 
     // box-shadow: 0 10px 5px -5px $secondaryColor; 
     // margin-bottom: $gutter;
@@ -160,6 +165,9 @@ main {
                 border: 1px solid black;
             }
         }
+        #btnemail {
+            color: $secondaryColor;
+        }
 
         // #newbtn1 {
         //     margin: 1%;
@@ -173,13 +181,13 @@ main {
         // }
     }
 
-    #cards {
-        margin: auto;
-        max-width: 60%;
-        display: grid;
-        grid-template-columns: 1fr;
+    // #cards {
+    //     margin: auto;
+    //     max-width: 60%;
+    //     display: grid;
+    //     grid-template-columns: 1fr;
         
-    }
+    // }
 
 
     #linehauls {
@@ -237,12 +245,39 @@ main {
   }
   
 
-#gallery {
-      margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    margin-bottom: $gutter;
+  
+  
+#newgallery {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5%;
+    column-gap: 0.5%;
+    margin-left: auto;
+    margin-right: auto;  
+     .skewElem {
+        display: block;
+        margin-bottom: 15px;
+        
+        // box-shadow: 0 0 2px 2px $secondaryColor2; 
+    }
+
+    // background-color: $primaryColor;
+    h1 {
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        z-index: 1;
+        font-size: 3em;
+        font-weight: 400;
+        display: none;
+      }
+      
+      header .name {
+        color: white;
+      }
+  
 }
+  
 
 
 

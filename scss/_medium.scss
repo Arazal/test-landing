@@ -42,7 +42,21 @@
                 
             // }
         }
-       
+        #newgallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items:auto;
+            // align-items:baseline;
+            .skewElem {
+                display: block;
+                margin-bottom: 15px;
+                min-height: 600px;
+                // box-shadow: 0 0 2px 2px $secondaryColor2; 
+            }
+        
+        }
 } 
 /* end media query */
+
+
 
