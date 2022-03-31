@@ -1,10 +1,26 @@
+const about = document.getElementById('about');
+const icon = document.getElementById('icon');
+
+const infra = document.getElementById('infra');
+
+about.addEventListener('click', () => {
+  document.location.href = 'about.html'
+})
+infra.addEventListener('click', () => {
+  document.location.href = 'infrastructure.html'
+})
+
+icon.addEventListener('click', () => {
+  document.location.href = 'index.html'
+})
+
 gsap.registerPlugin(ScrollTrigger);
 
-const footer = document.getElementById("copy")
+const footer1 = document.getElementById("copymain")
 
 const currentYear = new Date().getFullYear()
 
-footer.innerHTML = `&copy ${currentYear} SF Eastern Europe Region`
+footer1.innerHTML = `&copy ${currentYear} SF Eastern Europe Region`
 
 
 

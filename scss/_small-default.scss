@@ -20,14 +20,18 @@ nav {
     // background-color: white;
     // border: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-left: $gutter;
     padding-right: $gutter;
 
     #logo {
-        height: 100px;
-        width: 200px;
+        height: 70px;
+        width: 180px;
+    }
+
+    #icon:hover {
+        cursor: pointer;
     }
 
     // box-shadow: 0 10px 5px -5px $secondaryColor; 
@@ -36,6 +40,10 @@ nav {
     // #about {
     //     display: none;
     // }
+    #infraabout {
+        display: flex;
+
+    }
 
     #about:hover {
         color: $secondaryColor2;
@@ -44,6 +52,17 @@ nav {
 
     #about {
         color: $secondaryColor;
+    }
+
+    #infra:hover {
+        color: $secondaryColor2;
+        cursor: pointer;
+    }
+
+    #infra {
+        color: $secondaryColor;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -277,6 +296,14 @@ main {
       }
   
 }
+
+.gallery {
+    :hover {
+        transform: scale(1.1);
+        transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        cursor: pointer;
+    }
+}
   
 
 
@@ -316,6 +343,18 @@ main {
     
 }
 
+#copymain {
+    color: white;
+    opacity: 0.85;
+    margin: $gutter;
+    // margin-left: auto;
+    // margin-right: auto;
+
+}
+#copymain:hover {
+    color: $secondaryColor;
+    cursor: pointer;
+}
 #copy {
     color: white;
     opacity: 0.85;

@@ -106,22 +106,39 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-left: 2%;
   padding-right: 2%; }
   nav #logo {
-    height: 100px;
-    width: 200px; }
+    height: 70px;
+    width: 180px; }
+  nav #icon:hover {
+    cursor: pointer; }
+  nav #infraabout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   nav #about:hover {
     color: #eca154;
     cursor: pointer; }
   nav #about {
     color: #c8102e; }
+  nav #infra:hover {
+    color: #eca154;
+    cursor: pointer; }
+  nav #infra {
+    color: #c8102e;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 main figure.mainbanner {
   width: 100%;
@@ -261,6 +278,15 @@ main .lps {
   #newgallery header .name {
     color: white; }
 
+.gallery :hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  cursor: pointer; }
+
 #redline {
   height: 5px;
   background-color: #c8102e; }
@@ -296,6 +322,15 @@ main .lps {
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       cursor: pointer; }
+
+#copymain {
+  color: white;
+  opacity: 0.85;
+  margin: 2%; }
+
+#copymain:hover {
+  color: #c8102e;
+  cursor: pointer; }
 
 #copy {
   color: white;
